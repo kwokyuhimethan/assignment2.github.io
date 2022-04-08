@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<br>
+<div id="navbar">
+    <img src="stadium.png" id="logo" style="border:0; width: 50px; height: 50px;">
+    <div id="navbar-right">
+      <a href="index.html">Home</a>
+      <a href="page2.html">Facilities</a>
+      <a class="active" href="page3.html">Directions</a>
+      <a href="page4.html">How to Book</a>
+    </div>
+  </div>
+
+
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+<br><br><br>
+<p style="text-align:center; font-size: 50px;">DIRECTIONS</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.923130353933!2d103.6941925!3d1.3378059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd375d9c4ac268de2!2sJurong%20West%20ActiveSG%20Sports%20Centre!5e0!3m2!1sen!2ssg!4v1649407682311!5m2!1sen!2ssg" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="center"></iframe>
+  <br>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="busstop.png" alt="Bus Stops" style="width:100%">
+        <div class="container">
+          <h2>BUS</h2>
+          <p class="title">Directions</p>
+          <p>There are several bustops around Jurong West Stadium. <br> <b>Those are:</b><br>Opp Blk 974 <br>Jurong West Street 93 - Blk 974 <br>Opp Blk 643 <br>Blk 643. </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="mrt.png" alt="MRT" style="width:100%">
+        <div class="container">
+          <h2>MRT</h2>
+          <p class="title">Directions</p>
+          <p>The closest MRT station is Pioneer MRT Station. It is only a five minute walk.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="carpark.png" alt="carpark" style="width:100%">
+        <div class="container">
+          <h2>Parking</h2>
+          <p class="title">Prices</p>
+          <p><b>MON-FRI before 5/6</b><br>$0.6/hr from 7am to 10:30pm<br><br><b>MON-FRI after 5/6</b><br>$0.6/hr from 10:30pm to 7am the following day<br><br><b>SAT/SUN/PUBLIC HOLIDAYS</b><br>Charges same as weekdays</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+</html>

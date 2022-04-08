@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>Website</h2>
+  <h1 style="font-size:50px">Jurong West Stadium</h1>
+  <p>Sporting Facility</p>
+</div>
+
+<br>
+<div id="navbar">
+    <img src="stadium.png" id="logo" style="border:0; width: 50px; height: 50px;">
+    <div id="navbar-right">
+      <a class="active" href="index.html">Home</a>
+      <a href="page2.html">Facilities</a>
+      <a href="page3.html">Directions</a>
+      <a href="page4.html">How to Book</a>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  
+      <div class="information-text">
+        <u>
+        <h2>About Us</h2>
+        </u>
+        </div> 
+
+          <img src="Jwstadium.jpg" alt="HJwstadium" style="float:right;width:644px;height: 400px; padding-right:40p
+          
+          
+          ; margin-top: 0px;">
+        
+          <p style="font-size: 30px;">Jurong West Stadium is the main venue. It was officially opened to the public on 10 November 2006.</p>
+          <p style="font-size: 30px;">This sports complex is notable because it is the largest integrated sports centre in Singapore.</p>
+         <p style="font-size: 30px;"><b>It is located next to Pioneer MRT.</b></p>
+         <p style="font-size: 30px;">As the 3rd integrated facility with pool features, Jurong West Sport Centre, formerly known as Jurong West Sport and Recreation Centre, has raised the benchmark for all swimming pools in 2006. With close proximity to the Pioneer MRT station, it has been able to position itself to be a sport and leisure venue.</p>
+         <p style="font-size: 30px;">More than just being a choice venue for sport activities, Jurong West Sport Centre offers a range of food and beverage outlets with ample sheltered parking lots.</p>
+
+        </div>
+
+<div class="information-text">
+<u>
+<h2 style="text-align:center; padding-top: 70px;">For More Information</h2>
+</u>
+</div> 
+<div class="more-information-box">
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="Facebook.png" alt="Facebook Logo" style="width:50%; height: 50%;" class="center">
+        <div class="container">
+          <h2>Facebook</h2>
+          <p>Find out more information on Facebook</p>
+          <p><button onclick="window.location.href='https://www.facebook.com/activesgjurongwestsportscentre/'"class="button">Click Here</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="instagram.png" alt="Instagram Logo" style="width:50%; height: 50%;" class="center">
+        <div class="container">
+          <h2>Instagram</h2>
+          <p>Find out more information on Instagram</p>
+          <p><button onclick="window.location.href='https://www.instagram.com/activesg.jurongwest/?hl=en'"class="button">Click Here</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="ActiveSG-app-icon.png" alt="ActiveSG Logo" style="width:50%; height: 50%;" class="center">
+        <div class="container">
+          <h2>ActiveSG</h2>
+          <p>Find out more information on ActiveSG Website</p>
+          <p><button onclick="window.location.href='https://www.myactivesg.com/facilities/jurong-west-stadium'"class="button">Click Here</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </body>
+</html>

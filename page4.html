@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+<br>
+<div id="navbar">
+    <img src="stadium.png" id="logo" style="border:0; width: 50px; height: 50px;">
+    <div id="navbar-right">
+      <a href="index.html">Home</a>
+      <a href="page2.html">Facilities</a>
+      <a href="page3.html">Directions</a>
+      <a class="active" href="page4.html">How to Book</a>
+    </div>
+  </div>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  <br><br><br>
+  <p style="text-align:center; font-size: 50px;">HOW TO BOOK</p>
+
+<div class="timeline">
+    <div class="container4 left">
+      <div class="content4">
+        <h2 style="text-align:center;">Step 1</h2>
+        <img src="step1.png" alt="Step1" style="width:50%; height: 50%;" class="center">
+        <p style="text-align:center;">Login to ActiveSG App and tap on Facilities.</p>
+      </div>
+    </div>
+    <div class="container4 right">
+      <div class="content4">
+        <h2 style="text-align:center;">Step 2</h2>
+        <img src="step2.png" alt="Step2" style="width:50%; height: 50%;" class="center">
+        <p style="text-align:center;">Tap on Search box. Enter the ActiveSG facility you plan to visit.</p>
+        </div>
+    </div>
+    <div class="container4 left">
+      <div class="content4">
+        <h2 style="text-align:center;">Step 3</h2>
+        <img src="step3.png" alt="Step3" style="width:50%; height: 50%;" class="center">
+        <p style="text-align:center;">Select the facility you plan to visit. (Tip: You can favourite the facility to add it to your ‘My Favourites’.)</p>
+        </div>
+    </div>
+    <div class="container4 right">
+      <div class="content4">
+        <h2 style="text-align:center;">Step 4</h2>
+        <img src="step5.png" alt="Step4" style="width:50%; height: 50%;" class="center">
+        <p style="text-align:center;">Select Date of Visit and tap on onePA button or scroll down the page.</p>
+        </div>
+    </div>
+    <div class="container4 left">
+      <div class="content4">
+        <h2 style="text-align:center;">Step 5</h2>
+        <img src="step6.png" alt="Step5" style="width:50%; height: 50%;" class="center">
+        <p style="text-align:center;">Select the desired timeslot and tap <b>ADD TO CART.</b></p>
+        </div>
+    </div>
+    <div class="container4 right">
+        <h2 style="text-align:center;">Step 6</h2>
+        <img src="step7.png" alt="Step6" style="width:50%; height: 50%;" class="center">
+        <p style="text-align:center;">Tap on <b>PAY NOW</b> to go to <b>Shopping Cart.</b> Proceed to complete the payment.</p>
+        </div>
+    </div>
+  </div>
+
+    </body>
+</html>

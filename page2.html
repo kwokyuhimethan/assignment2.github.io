@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<br>
+<div id="navbar">
+    <img src="stadium.png" id="logo" style="border:0; width: 50px; height: 50px;">
+    <div id="navbar-right">
+      <a href="index.html">Home</a>
+      <a class="active" href="page2.html">Facilities</a>
+      <a href="page3.html">Directions</a>
+      <a href="page4.html">How to Book</a>
+    </div>
+  </div>
+
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  <br>
+  <br>
+  <br>
+  <p style="text-align:center; font-size: 50px;">FACILITIES</p>
+  <!-- The four columns -->
+  <div class="row">
+    <div class="column2">
+      <img src="badminton court.jpg" alt="With 12 Badminton Courts, there is always space for you to play" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column2">
+      <img src="Jurong West ActiveSG Gym1.jpg" alt="With ample equipment, space and a good community, there is always the motivation to workout." style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column2">
+      <img src="jurong-west-swimming.jpg" alt="With multiple swimming pools to cater to all age groups, it is the perfect spot for a family outing." style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column2">
+      <img src="track and field.jpg" alt="A full size olympic track and field. A perfect place for you to go for your evening runs." style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+  <div class="container2">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <img id="expandedImg" style="width:60%;" class="center">
+    <div id="imgtext"></div>
+  </div>
+
+  <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
+
+  </div>
+
+    </body>
+</html>
